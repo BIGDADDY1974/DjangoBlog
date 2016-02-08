@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Svilar Davor</title>
+	<meta charset="utf-8" />
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type = "text/css"/>
+	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+	
+	<style type="text/css">
+		html,
+		body {
+		  height:100%
+		}
+	</style>
+</head>
+
+<body class="body" style="background-color:#f6f6f6">
+	<div class="container-fluid" style="min-height:90%; ">
+		<div class="row">
+			  <div class="col-sm-2">
+				  </br>
+				  	<center>
+					<img src="{% static 'img\profiledaki.png' %}" class="responsive-img"  alt="face">
+						<h2><strong>Svilar Davor PYTHON DJANGO site with Contact and BLOG !!!</strong></h2>
+				  	</center>
+			  </div>
+			<div class="col-sm-10">
+				  </br>
+					<p><center><h1><strong>THIS IS NOT AN AWARD WINNING WEB SITE :-)</strong></h1></center></p>
+				  </br>
+				  <center>
+				  <h3>BEAUTIFUL IS BETTER THAN UGLY * EXPLICIT IS BETTER THAN IMPLICIT * SIMPLE IS BETTER THAN COMPLEX *
+					  COMPLEX IS BETTER THAN COMPLICATED * FLAT IS BETTER THAN NESTED * SPARSE IS BETTER THAN DENSE *
+					  READABILITY COUNTS * SPECIAL CASES AREN'T SPECIAL ENOUGH TO BREAK THE RULES *
+					  ALTHOUGH PRACTICALITY BEATS PURITY * ERRORS SHOULD NEVER PASS SILENTLY * UNLESS EXPLICITLY SILENCED *
+					  IN THE FACE OF AMBIGUITY, REFUSE THE TEMPTATION TO GUESS *
+					  THERE SHOULD BE ONE-- AND PREFERABLY ONLY ONE --OBVIOUS WAY TO DO IT *
+					  ALTHOUGH THAT WAY MAY NOT BE OBVIOUS AT FIRST UNLESS YOU'RE DUTCH * NOW IS BETTER THAN NEVER *
+					  ALTHOUGH NEVER IS OFTEN BETTER THAN "RIGHT" NOW * IF THE IMPLEMENTATION IS HARD TO EXPLAIN, IT'S A BAD IDEA *
+					  IF THE IMPLEMENTATION IS EASY TO EXPLAIN, IT MAY BE A GOOD IDEA *
+					  NAMESPACES ARE ONE HONKING GREAT IDEA -- LET'S DO MORE OF THOSE! BEAUTIFUL IS BETTER THAN UGLY * EXPLICIT IS BETTER THAN IMPLICIT * SIMPLE IS BETTER THAN COMPLEX *
+					  COMPLEX IS BETTER THAN COMPLICATED * FLAT IS BETTER THAN NESTED * SPARSE IS BETTER THAN DENSE *
+					  READABILITY COUNTS * SPECIAL CASES AREN'T SPECIAL ENOUGH TO BREAK THE RULES *
+					  ALTHOUGH PRACTICALITY BEATS PURITY * ERRORS SHOULD NEVER PASS SILENTLY * UNLESS EXPLICITLY SILENCED *
+					  IN THE FACE OF AMBIGUITY, REFUSE THE TEMPTATION TO GUESS *
+					  THERE SHOULD BE ONE-- AND PREFERABLY ONLY ONE --OBVIOUS WAY TO DO IT *
+					  ALTHOUGH THAT WAY MAY NOT BE OBVIOUS AT FIRST UNLESS YOU'RE DUTCH * NOW IS BETTER THAN NEVER *
+					  ALTHOUGH NEVER IS OFTEN BETTER THAN "RIGHT" NOW * IF THE IMPLEMENTATION IS HARD TO EXPLAIN, IT'S A BAD IDEA *
+					  IF THE IMPLEMENTATION IS EASY TO EXPLAIN, IT MAY BE A GOOD IDEA *
+					  NAMESPACES ARE ONE HONKING GREAT IDEA -- LET'S DO MORE OF THOSE!</h3>
+				  </center>
+			</div>
+		</div><hr>
+
+		<div class="row">
+		  <div class="col-sm-2">
+		  <br>
+
+		  <br>
+		   <!-- Great, til you resize. -->
+			<!--<div class="well bs-sidebar affix" id="sidebar" style="background-color:#fff">-->
+			<div class="well bs-sidebar" id="sidebar" style="background-color:#fff">
+			  <ul class="nav nav-pills nav-stacked">
+				<li><a href='/'><h3>Home</h3></a></li>
+				<li><a href='/blog/'><h3>Blog</h3></a></li>
+				<li><a href='/contact/'><h3>Contact</h3></a></li>
+			  </ul>
+			</div> <!--well bs-sidebar affix-->
+		  </div> <!--col-sm-2-->
+		  <div class="col-sm-10">
+		  
+			<div class='container-fluid'>
+			<br><br>
+			   {% block content %}
+			   {% endblock %}	
+			</div>
+		  </div>
+		</div> 
+	</div>
+
+	<footer>
+		<div class="container-fluid" style='margin-left:15px'>
+			<p><a href="/contact/" target="blank">Contact</a> | <a href="https://rs.linkedin.com/in/davorsvilar" target="blank">LinkedIn</a> | <a href="https://www.facebook.com/davor.svilar" target="blank">Facebook</a> | <a href="http://davor.smallideafactory.com/" target="blank">Portfolio+</a></p>
+		</div>
+	</footer>	
+	
+</body>
+
+</html>
